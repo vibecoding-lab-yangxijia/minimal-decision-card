@@ -1,0 +1,32 @@
+{
+  "name": "minimal-decision-card",
+  "version": "0.1.0",
+  "private": true,
+  "description": "极简决策卡 · 面向选择困难症的移动端决策互动 Web 应用",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0",
+    "canvas-confetti": "^1.9.3",
+    "framer-motion": "^11.18.0",
+    "modern-screenshot": "^4.0.0",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
+  }
+}

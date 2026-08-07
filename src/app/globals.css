@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/*
+ * 新粗野主义 (Neo-Brutalism) 设计变量
+ * Tailwind CSS v4 采用 CSS-first 配置：@theme 中定义的 token 会自动
+ * 生成对应的 utility 类（如 bg-neon-pink / text-ink / font-display）。
+ * 详见指南 2.1 节：纯黑粗边框、硬阴影、直角、高饱和荧光色。
+ */
+@theme {
+  --color-ink: #000000; /* 主色：纯黑 */
+  --color-paper: #f7f3e8; /* 极简底色：米白 */
+  --color-neon-pink: #ff006e; /* 霓虹粉 */
+  --color-neon-green: #ccff00; /* 荧光绿 */
+  --color-neon-yellow: #ffb700; /* 明黄 */
+  --color-neon-cyan: #00e5ff; /* 电光青 */
+
+  --font-display: "Space Grotesk", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", system-ui, sans-serif;
+}
+
+html {
+  font-family: var(--font-display);
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  /* 移动端点击高亮（蓝色遮罩）去除 */
+  -webkit-tap-highlight-color: transparent;
+}
